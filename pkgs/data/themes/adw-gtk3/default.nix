@@ -9,7 +9,7 @@
 
 stdenvNoCC.mkDerivation rec {
   pname = "adw-gtk3";
-  version = "5.3";
+  version = "5.4";
 
   src = fetchFromGitHub {
     owner = "lassekongo83";
