@@ -648,7 +648,7 @@ in
           ${cfg.package}/bin/nmcli connection reload
         '';
       serviceConfig = {
-        EnvironmentFile = cfg.ensureProfiles.environmentFiles;
+        PassEnvironment = cfg.ensureProfiles.environmentFiles;
         UMask = "0177";
         Type = "oneshot";
       };
